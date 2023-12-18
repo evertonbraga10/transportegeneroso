@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;0,800;1,400;1,500;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Sarala:wght@400;700 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    height: 50px;
+    max-width: 400px;
+}
+
+.container .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+.container .text h1{
+    color: #0A2D8D;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+    margin-top: 150px;
+}
+
+.container .text span{
+    font-size: 2.5em;
+    color: #5B9BF6;
+}
+
+.container .text h3{
+    color: #0A2D8D;
+    font-size: 1.5em;
+}
+
+.container .text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #329737d3;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.container .text a:hover{
+    transform: translateY(-10px);
+    background-color: rgb(83, 219, 94);
+}
+
+.boxImg img{
+    border-radius: 8px;
+}
+
+.big-number-style{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 210px;
+    width: 100%;
+    /* margin-bottom: 100%; */
+    color: rgb(10, 45, 141);
+    margin-bottom: 40px;
+}
+
+.big-number-style h2{
+    font-size: 32px;
+}
+
+.big-number-style img{
+    width: 100px;
+}
+
+.section-sobre{
+    background-image: url(img/top-main-bg.webp);
+    padding: 100px;
+}
+
+.section-sobre img{
+    max-width: 100%;
+}
+
+.section-sobre-info{
+    margin-bottom: 200px;
+}
+
+.section-sobre-info h1{
+    font-size: 32px;
+    color: #0A2D8D;
+}
+
+.section-sobre-info p{
+    color: #0A2D8D;
+    padding: 2px;
+    font-size: medium;
+}
+
+footer{
+    background: #121212;
+    color: #fff;
+    height: 30px;
+}
+
+.copy{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* wpp */
+#div-fixa{
+    position: fixed;
+    bottom: 20px;
+    margin: 0 20px;
+    background: rgb(89, 245, 122);
+    width: 230px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+#div-fixa.shrink {
+    width: 50px;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+
+#div-fixa img{
+    width: 50px;
+    height: 50px;
+}
+
+#div-fixa a .flex-itens{
+    display: flex;
+    align-items: center;
+}
+
+#div-fixa a .flex-itens span{
+    display: block;
+    font-weight: bold;
+    color: #040305;
+    margin-left: 5px;
+    font-size: 18px;
+    min-width: 170px;
+    opacity: 0;
+}
+
+#div-fixa a .flex-itens span.aparecer{
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.flutuar{
+    animation-name: flutuar;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar {
+    from{
+        transform: translate3d(0,0,0);
+        filter: brightness(100%);
+    }
+    to{
+        transform: translate3d(0,-15px,0);
+        filter: brightness(150%); 
+    }
+}
